@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="class.css">
+    <title>LOGIN</title>
+</head>
+<body>
+    <section class="login-form-wrap">
+        <h1>Facebook</h1>
+        <form class="login-form" id="loginForm">
+          <label>
+            <input type="email" name="email" required placeholder="Email">
+          </label>
+          <label>
+            <input type="password" name="password" required placeholder="Password">
+          </label>
+          <input type="submit" value="Login">
+        </form>
+        <h5><a href="#">Forgot password</a></h5>
+    </section>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from submitting
+            // Perform form validation or any other action if needed here
+            window.location.href = 'class1.html'; // Redirect to class1.html
+        });
+    </script>
+</body>
+</html>
